@@ -19,6 +19,9 @@ public class Game extends Main {
             Scanner attemptScanner = new Scanner(System.in);
             System.out.println("Make a guess: ");
             int attempt = attemptScanner.nextInt();
+            public easyMode(){
+                int attempt;
+            }
 
             if (attempt > guessNumber) {
                 System.out.println("Too high.Try again.");
@@ -31,6 +34,7 @@ public class Game extends Main {
             }
         }
         System.out.println("Sorry, you lost");
+        System.out.println("XD");
         Game.revealNumber();
     }
 
@@ -38,5 +42,10 @@ public class Game extends Main {
     static int revealNumber() {
         System.out.println("Draw number is: "+numberDraw()+".");
         return 0;
+    }
+
+    //Metoda sprawdzająca liczbę
+    static int checkNumber(){
+        if (easyMode();
     }
 }
